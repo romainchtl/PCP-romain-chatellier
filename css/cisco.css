@@ -55,7 +55,16 @@
     .logo:hover { color: var(--accent2); }
 
     /* ── NAV ──────────────────────────────────*/
-    nav { display: flex; align-items: center; gap: 0.25rem; }
+    nav.nav-dock {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem;
+      box-shadow: 0 8px 24px rgba(30,58,95,0.08);
+    }
 
     nav a.nav-link {
       color: var(--text);
@@ -63,7 +72,7 @@
       font-size: 0.875rem;
       font-weight: 500;
       padding: 0.4rem 0.9rem;
-      border-radius: 6px;
+      border-radius: 999px;
       transition: background 0.15s, color 0.15s;
     }
     nav a.nav-link:hover { background: var(--border); color: var(--accent); }
@@ -78,15 +87,15 @@
       color: var(--text);
       font-size: 0.875rem;
       font-weight: 500;
-      padding: 0.4rem 0.9rem;
-      border-radius: 6px;
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
       cursor: pointer;
       user-select: none;
       transition: background 0.15s, color 0.15s;
     }
     .dropdown-toggle:hover,
     .dropdown:focus-within .dropdown-toggle {
-      background: var(--border);
+      background: var(--surface);
       color: var(--accent);
     }
 

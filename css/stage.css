@@ -55,7 +55,16 @@
     .logo:hover { color: var(--accent2); }
 
     /* ── NAV ──────────────────────────────────*/
-    nav { display: flex; align-items: center; gap: 0.25rem; }
+    nav.nav-dock {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem;
+      box-shadow: 0 8px 24px rgba(30,58,95,0.08);
+    }
 
     nav a.nav-link {
       color: var(--text);
@@ -63,7 +72,7 @@
       font-size: 0.875rem;
       font-weight: 500;
       padding: 0.4rem 0.9rem;
-      border-radius: 6px;
+      border-radius: 999px;
       transition: background 0.15s, color 0.15s;
     }
     nav a.nav-link:hover { background: var(--border); color: var(--accent); }
@@ -78,15 +87,15 @@
       color: var(--text);
       font-size: 0.875rem;
       font-weight: 500;
-      padding: 0.4rem 0.9rem;
-      border-radius: 6px;
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
       cursor: pointer;
       user-select: none;
       transition: background 0.15s, color 0.15s;
     }
     .dropdown-toggle:hover,
     .dropdown:focus-within .dropdown-toggle {
-      background: var(--border);
+      background: var(--surface);
       color: var(--accent);
     }
 
@@ -396,5 +405,95 @@
     @media (prefers-reduced-motion: reduce) {
       .mission-panel,
       .mission-chevron { transition: none; }
+    }
+
+    /* ── ICON DOCK (menu à expansion au survol) ─*/
+    .dock-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 1rem 0;
+    }
+
+    .icon-dock {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(30,58,95,0.10);
+    }
+
+    .dock-item {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      width: 44px;
+      height: 44px;
+      padding: 0 0.55rem;
+      border-radius: 999px;
+      color: var(--accent);
+      text-decoration: none;
+      overflow: hidden;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+      transition:
+        width 0.45s cubic-bezier(.22,1,.36,1),
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .dock-item:hover,
+    .dock-item:focus-visible,
+    .dock-item.is-active {
+      width: 156px;
+      background: var(--border);
+      color: var(--accent2);
+      box-shadow: 0 0 0 1px var(--accent2) inset;
+    }
+    .dock-item:focus-visible { outline: none; }
+
+    .dock-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dock-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .dock-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      opacity: 0;
+      max-width: 0;
+      transform: translateX(-6px);
+      transition:
+        opacity 0.25s ease,
+        max-width 0.45s cubic-bezier(.22,1,.36,1),
+        transform 0.35s ease;
+    }
+
+    .dock-item:hover .dock-label,
+    .dock-item:focus-visible .dock-label,
+    .dock-item.is-active .dock-label {
+      opacity: 1;
+      max-width: 110px;
+      transform: translateX(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dock-item, .dock-label { transition: none; }
     }
   
