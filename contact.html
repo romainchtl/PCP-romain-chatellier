@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio – Romain Chatellier</title>
-  <link href="css/index.css" rel="stylesheet"></head>
+  <link href="css/contact.css" rel="stylesheet"></head>
 <body>
 
 <header>
@@ -51,6 +51,7 @@
           </ul>
         </div>
       </div>
+      
     </nav>
   </div>
 </header>
@@ -63,22 +64,56 @@
   <p class="subtitle-name">Romain Chatellier</p>
   <p class="subtitle-degree">BTS SIO — option SISR</p>
 
-  <div class="divider"></div>
+    <div class="contact-wrap">
+  <div class="contact-card">
 
-  <br><img src="" alt="Photo moi"><br><br>
+    <div class="contact-card-header">
+      <span class="hero-tag">Contact</span>
+      <h2>Me contacter</h2>
+      <div class="contact-divider"></div>
+      <p>Vous pouvez me laisser un message ci-dessous, je vous répondrai dans les plus brefs délais.</p>
+    </div>
 
-  <div class="about-box">
-    <label>À propos</label>
-    <p>
-    Étudiant en BTS SIO, option SISR, je suis passionné par l'informatique et plus particulièrement par les infrastructures réseau et les systèmes.
-    Après une année passée à l'Institut Universitaire de Technologie (IUT) de Lannion en filière Réseaux et Télécommunications, 
-    j'ai choisi de me réorienter vers un BTS SIO, option SISR, afin de développer davantage mes compétences dans l'administration des systèmes et des réseaux.
-    Curieux et motivé, j'aime apprendre de nouvelles choses et approfondir mes connaissances sur des sujets variés, 
-    notamment dans le domaine des technologies de l'information.
-    En dehors de l'informatique, je pratique régulièrement la musculation, la course à pied et la callisthénie, 
-    des disciplines qui m'ont permis de développer rigueur, persévérance et sens du dépassement de soi.
-    </p>
+    <form id="contactForm" action="https://formspree.io/f/maqgaykn" method="POST" novalidate>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Dupont" autocomplete="family-name" required />
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Jean" autocomplete="given-name" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" autocomplete="tel" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Adresse mail</label>
+        <input type="email" id="email" name="email" placeholder="jean.dupont@mail.com" autocomplete="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message…" required></textarea>
+      </div>
+
+      <button class="form-submit" type="submit">
+        Envoyer
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+
+      <div class="form-success" id="formSuccess">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Message envoyé !
+      </div>
+    </form>
   </div>
+</div>
 </main>
 
 <footer>
@@ -104,5 +139,25 @@
   </div>
 </footer>
 
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var form = this;
+    var success = document.getElementById('formSuccess');
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function (response) {
+      if (response.ok) {
+        success.classList.add('show');
+        form.reset();
+        setTimeout(function () { success.classList.remove('show'); }, 5000);
+      }
+    });
+  });
+</script>
 </body>
 </html>
