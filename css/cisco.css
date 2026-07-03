@@ -142,6 +142,54 @@
     .dropdown-menu a:hover { background: var(--border); color: var(--accent); }
 
     /* ── MAIN ────────────────────────────────*/
+    .certif-deck {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certif-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.certif-card:hover {
+  box-shadow: 0 8px 24px rgba(30,58,95,0.12);
+  transform: translateY(-3px);
+}
+
+.certif-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.certif-body {
+  padding: 1.1rem 1.25rem;
+}
+
+.certif-body h5 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.certif-body p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .certif-deck { grid-template-columns: 1fr; }
+}
+    
     main {
       flex: 1;
       max-width: 860px;
@@ -280,6 +328,7 @@
       border-top: 1px solid var(--border);
       padding-top: 1rem;
     }
+
 
     /* ── RESPONSIVE ──────────────────────────*/
     @media (max-width: 640px) {
