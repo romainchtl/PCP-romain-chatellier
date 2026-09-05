@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Romain Chatellier</title>
+  <link href="css/contact.css" rel="stylesheet"></head>
+<body>
+
+<header>
+  <div class="header-band">
+    <a class="logo" href="index.html">PCP — Romain Chatellier</a>
+
+    <nav class="nav-dock" aria-label="Navigation principale">
+
+      <div class="dropdown" tabindex="0">
+        <div class="dropdown-toggle">
+           <img src="image/stage.png" alt="Stage" style="width: 20px; height: 20px;" >Stage <span class="chevron"></span>
+        </div>
+        <div class="dropdown-menu">
+          <a href="stage1.html">Stage 1</a>
+          <a href="stage2.html">Stage 2</a>
+        </div>
+      </div>
+
+      <div class="dropdown" tabindex="0">
+        <div class="dropdown-toggle">
+          <img src="image/study.png" alt="Stage" style="width: 20px; height: 20px;" >BTS SIO <span class="chevron"></span>
+        </div>
+        <div class="dropdown-menu">
+          <a href="ap1.html">AP 1</a>
+          <a href="ap2.html">AP 2</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="certif.html">Certification</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="annexe.html">Annexe</a>
+    </nav>
+  </div>
+</header>
+
+<main id="presentation">
+  <span class="hero-tag">Portfolio</span>
+
+  <h1>Bienvenue dans<br>mon portfolio</h1>
+
+  <p class="subtitle-name">Romain Chatellier</p>
+  <p class="subtitle-degree">BTS SIO — option SISR</p>
+
+    <div class="contact-wrap">
+  <div class="contact-card">
+
+    <div class="contact-card-header">
+      <span class="hero-tag">Contact</span>
+      <h2>Me contacter</h2>
+      <div class="contact-divider"></div>
+      <p>Vous pouvez me laisser un message ci-dessous, je vous répondrai dans les plus brefs délais.</p>
+    </div>
+
+    <form id="contactForm" action="https://formspree.io/f/maqgaykn" method="POST" novalidate>
+
+      <input type="hidden" name="_next" value="https://romainchtl.github.io/PCP-romain-chatellier/contact.html#formSuccess" />
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Dupont" autocomplete="family-name" required />
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Jean" autocomplete="given-name" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" autocomplete="tel" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Adresse mail</label>
+        <input type="email" id="email" name="email" placeholder="jean.dupont@mail.com" autocomplete="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message…" required></textarea>
+      </div>
+
+      <button class="form-submit" type="submit">
+        Envoyer
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+
+      <div class="form-success" id="formSuccess">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Message envoyé !
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-block">
+      <span class="footer-name">Romain Chatellier</span>
+      <span class="footer-info">
+        Rennes, 35000<br>
+        0783989951
+      </span>
+    </div>
+
+    <div class="footer-links">
+      <a href="mailto:romainchatellier7@gmail.com">romainchatellier7@gmail.com</a>
+      <a href="https://www.linkedin.com/in/romain-chatellier-987116261/" target="_blank" rel="noopener">
+        Romain Chatellier
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-inner">
+    <p class="footer-copy">Romain Chatellier BTS SIO</p>
+  </div>
+</footer>
+</body>
+</html>
