@@ -11,6 +11,11 @@
   <div class="header-band">
     <a class="logo" href="index.html">PCP — Romain Chatellier</a>
 
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Ouvrir le menu de navigation">
+      <span></span><span></span><span></span>
+    </label>
+
     <nav class="nav-dock" aria-label="Navigation principale">
 
       <div class="dropdown" tabindex="0">
@@ -33,33 +38,9 @@
         </div>
       </div>
 
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="certif.html">Certification <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="annexe.html">Annexe <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <a class="nav-link" href="certif.html">Certification</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="annexe.html">Annexe</a>
     </nav>
   </div>
 </header>
@@ -80,52 +61,35 @@
     en dévellopement pour diverse AP : <br>
     </p>
   </div><br><br>
-  <div>
-    <label><h3><u>AP 1 : Formation sur un outil informatique Trello</u></h3><br></label><br>
-    <p>
-    Cette AP avait pour but de former une classe de 1ère NSI à l'outil informatique Trello. C'est un outil de gestion de projet et de tâches en ligne, gratuit et visuel, basé sur la méthode Kanban.  
-      Il permet d'organiser le travail sous forme de tableaux composés de listes (colonnes) et de cartes (tâches ou idées), offrant une vue d'ensemble claire de l'avancement d'un projet.<br>
-    </p><br>
-      <ul>
-        <li>
-          Compte rendus Hebdomadaire
-        </li><br>
-        <li>
-          Descriptif Organisation
-        </li><br>
-        <li>
-          Mode opératoire pour masterisation
-        </li><br>
-        <li>
-          compte rendu de gestion d'incident
-        </li><br>
-        <li>
-          Création d'une documentation pour image FOG
-        </li><br>
-        <li>
-          Implantation d'un nouveau téléphone
-        </li><br>
-        <li>
-          Configuration d'un poste Castel
-        </li><br>
-      </ul>
-  </div>
-    
-  <div>
-    <label><h3><u>AP 2 :</u></h3><br></label><br>
-    <p>
-    Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem 
-    proprium ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum vicarium communium 
-    et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.<br>
-    </p><br>
-  </div>
-  <div>
-    <label><h3><u>AP 3 :</u></h3><br></label><br>
-    <p>
-    Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium 
-    ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum 
-    vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.<br>
-    </p><br>
+
+  <div class="ap-grid">
+    <div class="ap-card">
+      <span class="hero-tag">AP 1</span>
+      <h3>AP formation</h3>
+      <p>
+        Présentation à compléter : contexte, objectifs et compétences mobilisées pour cette AP.
+      </p>
+      <div class="doc-links">
+        <span class="doc-links-label">Documents associés :</span>
+        <ul>
+          <li><a href="annexe.html#ap1-formation-doc">Documents de l'AP formation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ap-card">
+      <span class="hero-tag">AP 2</span>
+      <h3>GSB semestre 2</h3>
+      <p>
+        Présentation à compléter : contexte, objectifs et compétences mobilisées pour le projet GSB réalisé au semestre 2.
+      </p>
+      <div class="doc-links">
+        <span class="doc-links-label">Documents associés :</span>
+        <ul>
+          <li><a href="annexe.html#ap1-gsb-doc">Documents du projet GSB</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </main>
 

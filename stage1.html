@@ -11,6 +11,11 @@
   <div class="header-band">
     <a class="logo" href="index.html">PCP — Romain Chatellier</a>
 
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Ouvrir le menu de navigation">
+      <span></span><span></span><span></span>
+    </label>
+
     <nav class="nav-dock" aria-label="Navigation principale">
 
       <div class="dropdown" tabindex="0">
@@ -33,33 +38,9 @@
         </div>
       </div>
 
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="certif.html">Certification <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="annexe.html">Annexe <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <a class="nav-link" href="certif.html">Certification</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="annexe.html">Annexe</a>
     </nav>
   </div>
 </header>
@@ -83,58 +64,52 @@
   </div><br><br>
  
   <div class="missions">
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    <details class="mission">
+      <summary class="mission-header">
         <h3><u><strong>Mairie de Fougères</strong></u></h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s1-apercu-mairie">
                 <span class="mission-item-title">La Mairie</span><br>
-                <img src="" alt="Image mairie" style="width: 20px; height: 20px;" >BTS SIO <span class="chevron"></span>
+                <img src="" alt="Image mairie" style="width: 20px; height: 20px;" >
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-apercu-dsi">
                 <span class="mission-item-title">Membre de la DSI</span><br>
-                <img src="" alt="Membre dsi" style="width: 20px; height: 20px;" >BTS SIO <span class="chevron"></span>
+                <img src="" alt="Membre dsi" style="width: 20px; height: 20px;" >
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-apercu-organigramme">
                 <span class="mission-item-title">Organigramme</span><br>
-                <img src="" alt="Organigramme" style="width: 20px; height: 20px;" >BTS SIO <span class="chevron"></span>
+                <img src="" alt="Organigramme" style="width: 20px; height: 20px;" >
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
+          </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s1-apercu-mairie" aria-label="La Mairie"></a>
+            <a class="task-dot" href="#s1-apercu-dsi" aria-label="Membre de la DSI"></a>
+            <a class="task-dot" href="#s1-apercu-organigramme" aria-label="Organigramme"></a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    </details>
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 1 : Déploiement des postes et gestion du contrôle d'accès</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              La première mission qui m'a été confiée par Fabrice Belloir, directeur du service informatique, consistait à participer au déploiement des postes de travail 
-              et à la gestion du contrôle des accès au sein de la Mairie de Fougères. Au cours de cette mission, j'ai réalisé la masterisation des postes, découvert 
-              et pris en main l'outil de gestion WAPT, ainsi que configuré les droits d'accès à l'aide de Castel.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          La première mission qui m'a été confiée par Fabrice Belloir, directeur du service informatique, consistait à participer au déploiement des postes de travail 
+          et à la gestion du contrôle des accès au sein de la Mairie de Fougères. Au cours de cette mission, j'ai réalisé la masterisation des postes, découvert 
+          et pris en main l'outil de gestion WAPT, ainsi que configuré les droits d'accès à l'aide de Castel.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s1-m1-fog">
                 <span class="mission-item-title">Masterisation d'image FOG</span>
                 <p>
                   La première tâche qui m'a été confiée consistait à faire de la masterisation d'image FOG sur des PC DELL 16 pro. C'est ordinateur
@@ -144,7 +119,7 @@
                   du personnel de la mairie. 
                 </p><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-m1-wapt">
                 <span class="mission-item-title">Découverte de l'outil de gestion WAPT</span>
                 <p>Durant un après-midi, j'ai découvert l'outil de gestion WAPT, dont l'objectif est d'administrer l'ensemble du parc informatique de la Mairie de Fougères. 
                   Cette découverte m'a permis de comprendre son fonctionnement, ses principales fonctionnalités ainsi que son utilité dans le déploiement 
@@ -153,43 +128,46 @@
 
                 </p><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-m1-castel">
                 <span class="mission-item-title">Configuration des droits d'accès Castel</span>
                 <p>J'ai également participé à la configuration des droits d'accès à l'aide de Castel Suite et Planitech. Cette mission consistait à configurer et à installer un poste castel
                   et deux tablettes. Elle m'a permis de découvrir les principes de la gestion des accès, de mieux comprendre l'importance de la sécurité informatique 
                   et de me familiariser avec l'administration des droits au sein du système d'information de la Mairie de Fougères.
                 </p><br>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s1-m1-fog" aria-label="Masterisation d'image FOG"></a>
+            <a class="task-dot" href="#s1-m1-wapt" aria-label="Découverte de l'outil de gestion WAPT"></a>
+            <a class="task-dot" href="#s1-m1-castel" aria-label="Configuration des droits d'accès Castel"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage1-m1-cr">Compte rendu de mission 1</a></li>
+            <li><a href="annexe.html#stage1-m1-fog">Documentation FOG</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </details>
 
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 2 : Support et assistance aux utilisateurs</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              La seconde mission qui m'a été confiée par Fabrice Belloir consistait à gérer l'image numérique de la Mairie de Fougères. Au cours de cette mission, 
-              j'ai effectué des changements de mots de passe sur plusieurs applications de l'entreprise ainsi 
-              qu'une refonte d'un formulaire destiné aux ressources humaines sous WordPress.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          La seconde mission qui m'a été confiée par Fabrice Belloir consistait à gérer l'image numérique de la Mairie de Fougères. Au cours de cette mission, 
+          j'ai effectué des changements de mots de passe sur plusieurs applications de l'entreprise ainsi 
+          qu'une refonte d'un formulaire destiné aux ressources humaines sous WordPress.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s1-m2-mdp">
                 <span class="mission-item-title">Changement de mot de passe sur l'application d'entreprise</span>
                 <p>La première tâche qui m'a été confiée, en collaboration avec les développeurs, composés d'un alternant et d'un stagiaire, 
                   consistait à modifier des mots de passe dans différents environnements. Pour ce faire, j'ai dû mettre à jour les fichiers `.env`, 
@@ -198,7 +176,7 @@
 
                 </p><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-m2-forminator">
                 <span class="mission-item-title">Refonte du formulaire de contact (Forminator)</span>
                 <p>Cette tâche avait pour objectif de me faire découvrir une extension WordPress nommée <u>Forminator</u>. La Mairie de Fougères 
                   utilisait auparavant l'extension <u>Contact Form 7</u>, dédiée à la création de formulaires. 
@@ -208,41 +186,43 @@
 
                 </p><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-m2-hotline">
                 <span class="mission-item-title">Hotline</span>
                 <p>Je n'ai pas encore fait cette partie la de mon stage. Cette tâche à pour but de répondre aux différents problèmes des agents.
                 </p><br>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s1-m2-mdp" aria-label="Changement de mot de passe"></a>
+            <a class="task-dot" href="#s1-m2-forminator" aria-label="Refonte du formulaire Forminator"></a>
+            <a class="task-dot" href="#s1-m2-hotline" aria-label="Hotline"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage1-m2-cr">Compte rendu de mission 2</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    </details>
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 3 : Administration et exploitation de l'infrastructure réseau</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              La troisième mission qui m'a été confiée par Fabrice Belloir consistait à participer à l'administration de l'infrastructure réseau 
-              de la Mairie de Fougères. Au cours de cette mission, j'ai réalisé la configuration et la mise en service de téléphones IP. 
-              J'ai également participé à une intervention sur des commutateurs réseau (switches) de marques NETGEAR et Huawei, ce qui m'a permis de découvrir 
-              leur configuration et leur rôle au sein de l'infrastructure réseau.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          La troisième mission qui m'a été confiée par Fabrice Belloir consistait à participer à l'administration de l'infrastructure réseau 
+          de la Mairie de Fougères. Au cours de cette mission, j'ai réalisé la configuration et la mise en service de téléphones IP. 
+          J'ai également participé à une intervention sur des commutateurs réseau (switches) de marques NETGEAR et Huawei, ce qui m'a permis de découvrir 
+          leur configuration et leur rôle au sein de l'infrastructure réseau.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s1-m3-tel">
                 <span class="mission-item-title">Mise en place et configuration d'un téléphone IP</span>
                 <p>
                   Cette mission avait pour objectif de mettre en application une compétence acquise l’année précédente en BUT Réseaux et Télécommunications. 
@@ -252,7 +232,7 @@
                   l’appel soit dirigé vers le service et non vers un utilisateur individuel.
                 </p><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s1-m3-switch">
                 <span class="mission-item-title">Intervention sur switch Netgear et Huawei</span>
                 <p>
                   Cette tâche m’a été confiée en collaboration avec un collègue nommé Vincent. Ensemble, nous nous sommes rendus sur un site qui 
@@ -262,19 +242,21 @@
                   Cette intervention m’a permis de mettre en pratique les notions vues en travaux pratiques.
                 </p>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s1-m3-tel" aria-label="Configuration d'un téléphone IP"></a>
+            <a class="task-dot" href="#s1-m3-switch" aria-label="Intervention sur switch"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage1-m3-cr">Compte rendu de mission 3</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </details>
   </div>
 </main>
 
@@ -300,75 +282,6 @@
     <p class="footer-copy">Romain Chatellier BTS SIO</p>
   </div>
 </footer>
-
-<script>
-  (function () {
-    var carousels = document.querySelectorAll('[data-carousel]');
-
-    carousels.forEach(function (carousel) {
-      var track   = carousel.querySelector('.task-track');
-      var slides  = Array.prototype.slice.call(carousel.querySelectorAll('.task-slide'));
-      var prevBtn = carousel.querySelector('.task-prev');
-      var nextBtn = carousel.querySelector('.task-next');
-      var dotsBox = carousel.querySelector('.task-dots');
-      var index   = 0;
-
-      // Génère un point par tâche
-      var dots = slides.map(function (_, i) {
-        var dot = document.createElement('button');
-        dot.type = 'button';
-        dot.className = 'task-dot';
-        dot.setAttribute('aria-label', 'Aller à la tâche ' + (i + 1));
-        dot.addEventListener('click', function () { goTo(i); });
-        dotsBox.appendChild(dot);
-        return dot;
-      });
-
-      function update() {
-        track.style.transform = 'translateX(-' + (index * 100) + '%)';
-        dots.forEach(function (dot, i) { dot.classList.toggle('active', i === index); });
-        prevBtn.disabled = index === 0;
-        nextBtn.disabled = index === slides.length - 1;
-      }
-
-      function goTo(i) {
-        index = Math.max(0, Math.min(slides.length - 1, i));
-        update();
-      }
-
-      prevBtn.addEventListener('click', function () { goTo(index - 1); });
-      nextBtn.addEventListener('click', function () { goTo(index + 1); });
-
-      update();
-    });
-  })();
-</script>
-
-<script>
-  (function () {
-    var missions = document.querySelectorAll('.mission');
-
-    missions.forEach(function (mission) {
-      var header = mission.querySelector('.mission-header');
-
-      header.addEventListener('click', function () {
-        var isOpen = mission.classList.contains('open');
-
-        // Referme toutes les autres missions ouvertes
-        missions.forEach(function (other) {
-          if (other !== mission) {
-            other.classList.remove('open');
-            other.querySelector('.mission-header').setAttribute('aria-expanded', 'false');
-          }
-        });
-
-        // Ouvre/ferme la mission cliquée
-        mission.classList.toggle('open', !isOpen);
-        header.setAttribute('aria-expanded', String(!isOpen));
-      });
-    });
-  })();
-</script>
 
 </body>
 </html>

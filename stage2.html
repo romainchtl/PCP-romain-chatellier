@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio – Romain Chatellier - Stage 1</title>
+  <title>Portfolio – Romain Chatellier - Stage 2</title>
   <link href="css/stage.css" rel="stylesheet"></head>
 <body>
 
 <header>
   <div class="header-band">
     <a class="logo" href="index.html">PCP — Romain Chatellier</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Ouvrir le menu de navigation">
+      <span></span><span></span><span></span>
+    </label>
 
     <nav class="nav-dock" aria-label="Navigation principale">
 
@@ -33,33 +38,9 @@
         </div>
       </div>
 
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="certif.html">Certification <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropdown" tabindex="0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <class="nav-item active">
-                <a class="nav-link" href="annexe.html">Annexe <span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <a class="nav-link" href="certif.html">Certification</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="annexe.html">Annexe</a>
     </nav>
   </div>
 </header>
@@ -84,22 +65,20 @@
  
   <div class="missions">
 
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 1 : Gestion et maintenance de l'infrastructure de la mairie de Fougères</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              La première mission qui m'a été confiée par Fabrice Belloir (Directeur du service informatique) consistait à gérer et faire la maintenance
-              du réseau et de l'infrastructure de la Mairie de Fougères.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          La première mission qui m'a été confiée par Fabrice Belloir (Directeur du service informatique) consistait à gérer et faire la maintenance
+          du réseau et de l'infrastructure de la Mairie de Fougères.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s2-m1-fog">
                 <span class="mission-item-title">Masterisation d'image FOG</span>
                 <p>
                   La première tâche qui m'a été confiée consistait à faire de la masterisation d'image FOG sur des PC DELL 16 pro. C'est ordinateur
@@ -110,7 +89,7 @@
                 </p><br>
                  <img src="" alt="Photo image FOG"><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s2-m1-wapt">
                 <span class="mission-item-title">Découverte de l'outil de gestion WAPT</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
@@ -118,7 +97,7 @@
                 </p><br>
                 <img src="" alt="Photo image FOG"><br>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s2-m1-horsdomaine">
                 <span class="mission-item-title">Mise hors domaine d'ancien PC</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
@@ -126,154 +105,162 @@
                 </p><br>
                 <img src="" alt="Photo image FOG"><br>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s2-m1-fog" aria-label="Masterisation d'image FOG"></a>
+            <a class="task-dot" href="#s2-m1-wapt" aria-label="Découverte de l'outil WAPT"></a>
+            <a class="task-dot" href="#s2-m1-horsdomaine" aria-label="Mise hors domaine d'ancien PC"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage2-m1-cr">Compte rendu de mission 1</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </details>
 
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 2 :</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem
-              proprium ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum vicarium communium
-              et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem
+          proprium ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum vicarium communium
+          et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s2-m2-netgear">
                 <span class="mission-item-title">Intervention sur switch NETGEAR avec l'interface graphique</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s2-m2-nettoyage">
                 <span class="mission-item-title">Nettoyage de poste</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s2-m2-alcatel">
                 <span class="mission-item-title">Configuration et mise en place d'un téléphone Alcatel</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s2-m2-netgear" aria-label="Intervention sur switch NETGEAR"></a>
+            <a class="task-dot" href="#s2-m2-nettoyage" aria-label="Nettoyage de poste"></a>
+            <a class="task-dot" href="#s2-m2-alcatel" aria-label="Configuration téléphone Alcatel"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage2-m2-cr">Compte rendu de mission 2</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </details>
 
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 3 :</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium
-              ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum
-              vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium
+          ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum
+          vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s2-m3-castel">
                 <span class="mission-item-title">Configuration poste et tablette Castel</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s2-m3-portail">
                 <span class="mission-item-title">Mise à jour portail application</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s2-m3-castel" aria-label="Configuration poste et tablette Castel"></a>
+            <a class="task-dot" href="#s2-m3-portail" aria-label="Mise à jour portail application"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage2-m3-cr">Compte rendu de mission 3</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </details>
 
-    <div class="mission">
-      <button class="mission-header" type="button" aria-expanded="false">
+    <details class="mission">
+      <summary class="mission-header">
         <h3>Mission 4 :</h3>
         <span class="mission-chevron"></span>
-      </button>
-      <div class="mission-panel">
-        <div class="mission-panel-inner">
-          <div class="mission-content">
-            <p>
-              Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium
-              ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum
-              vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.
-            </p>
-            <div class="task-carousel" data-carousel>
-              <div class="task-carousel-viewport">
-                <div class="task-track">
-              <article class="task-slide">
+      </summary>
+      <div class="mission-content">
+        <p>
+          Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium
+          ipsum vicarium adoritur adhuc instabat deformi instabat e exitio potuit ut exitio multorum
+          vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis Catenae Paulus mortis.
+        </p>
+        <div class="task-carousel">
+          <div class="task-carousel-viewport">
+            <div class="task-track">
+              <article class="task-slide" id="s2-m4-castel">
                 <span class="mission-item-title">Configuration poste et tablette Castel</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-              <article class="task-slide">
+              <article class="task-slide" id="s2-m4-portail">
                 <span class="mission-item-title">Mise à jour portail application</span>
                 <p>Miserabiles ferro inpegit perduceret: casus ad eos dirus mucronem dextera mucronem proprium ipsum vicarium adoritur adhuc instabat
                   deformi instabat e exitio potuit ut exitio multorum vicarium communium et ut cognomentum ei erat ad ut ut genere conplicandis
                   Catenae Paulus mortis.
                 </p>
               </article>
-                </div>
-              </div>
-              <div class="task-carousel-controls">
-                <button class="task-nav-btn task-prev" type="button" aria-label="Tâche précédente">‹</button>
-                <div class="task-dots"></div>
-                <button class="task-nav-btn task-next" type="button" aria-label="Tâche suivante">›</button>
-              </div>
             </div>
           </div>
+          <div class="task-dots">
+            <a class="task-dot" href="#s2-m4-castel" aria-label="Configuration poste et tablette Castel"></a>
+            <a class="task-dot" href="#s2-m4-portail" aria-label="Mise à jour portail application"></a>
+          </div>
+        </div>
+        <div class="doc-links">
+          <span class="doc-links-label">Documents associés :</span>
+          <ul>
+            <li><a href="annexe.html#stage2-m4-cr">Compte rendu de mission 4</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </details>
 
   </div>
 </main>
@@ -300,75 +287,6 @@
     <p class="footer-copy">Romain Chatellier BTS SIO</p>
   </div>
 </footer>
-
-<script>
-  (function () {
-    var carousels = document.querySelectorAll('[data-carousel]');
-
-    carousels.forEach(function (carousel) {
-      var track   = carousel.querySelector('.task-track');
-      var slides  = Array.prototype.slice.call(carousel.querySelectorAll('.task-slide'));
-      var prevBtn = carousel.querySelector('.task-prev');
-      var nextBtn = carousel.querySelector('.task-next');
-      var dotsBox = carousel.querySelector('.task-dots');
-      var index   = 0;
-
-      // Génère un point par tâche
-      var dots = slides.map(function (_, i) {
-        var dot = document.createElement('button');
-        dot.type = 'button';
-        dot.className = 'task-dot';
-        dot.setAttribute('aria-label', 'Aller à la tâche ' + (i + 1));
-        dot.addEventListener('click', function () { goTo(i); });
-        dotsBox.appendChild(dot);
-        return dot;
-      });
-
-      function update() {
-        track.style.transform = 'translateX(-' + (index * 100) + '%)';
-        dots.forEach(function (dot, i) { dot.classList.toggle('active', i === index); });
-        prevBtn.disabled = index === 0;
-        nextBtn.disabled = index === slides.length - 1;
-      }
-
-      function goTo(i) {
-        index = Math.max(0, Math.min(slides.length - 1, i));
-        update();
-      }
-
-      prevBtn.addEventListener('click', function () { goTo(index - 1); });
-      nextBtn.addEventListener('click', function () { goTo(index + 1); });
-
-      update();
-    });
-  })();
-</script>
-
-<script>
-  (function () {
-    var missions = document.querySelectorAll('.mission');
-
-    missions.forEach(function (mission) {
-      var header = mission.querySelector('.mission-header');
-
-      header.addEventListener('click', function () {
-        var isOpen = mission.classList.contains('open');
-
-        // Referme toutes les autres missions ouvertes
-        missions.forEach(function (other) {
-          if (other !== mission) {
-            other.classList.remove('open');
-            other.querySelector('.mission-header').setAttribute('aria-expanded', 'false');
-          }
-        });
-
-        // Ouvre/ferme la mission cliquée
-        mission.classList.toggle('open', !isOpen);
-        header.setAttribute('aria-expanded', String(!isOpen));
-      });
-    });
-  })();
-</script>
 
 </body>
 </html>
