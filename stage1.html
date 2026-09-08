@@ -71,26 +71,41 @@
       </summary>
       <div class="mission-content">
         <div class="task-carousel">
-          <div class="task-carousel-viewport">
-            <div class="task-track">
-              <article class="task-slide" id="s1-apercu-mairie">
+          <input type="radio" name="s1-apercu-radio" id="s1-apercu-r1" class="carousel-radio" checked>
+          <input type="radio" name="s1-apercu-radio" id="s1-apercu-r2" class="carousel-radio">
+          <input type="radio" name="s1-apercu-radio" id="s1-apercu-r3" class="carousel-radio">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <article class="carousel-slide" id="s1-apercu-mairie">
                 <span class="mission-item-title">La Mairie</span><br>
                 <img src="" alt="Image mairie" style="width: 20px; height: 20px;" >
               </article>
-              <article class="task-slide" id="s1-apercu-dsi">
+              <article class="carousel-slide" id="s1-apercu-dsi">
                 <span class="mission-item-title">Membre de la DSI</span><br>
                 <img src="" alt="Membre dsi" style="width: 20px; height: 20px;" >
               </article>
-              <article class="task-slide" id="s1-apercu-organigramme">
+              <article class="carousel-slide" id="s1-apercu-organigramme">
                 <span class="mission-item-title">Organigramme</span><br>
                 <img src="" alt="Organigramme" style="width: 20px; height: 20px;" >
               </article>
             </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-apercu-r3" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-apercu-r2" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-apercu-r1" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-apercu-r3" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-apercu-r2" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-apercu-r1" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
           </div>
           <div class="task-dots">
-            <a class="task-dot" href="#s1-apercu-mairie" aria-label="La Mairie"></a>
-            <a class="task-dot" href="#s1-apercu-dsi" aria-label="Membre de la DSI"></a>
-            <a class="task-dot" href="#s1-apercu-organigramme" aria-label="Organigramme"></a>
+            <label for="s1-apercu-r1" class="carousel-dot" aria-label="Image 1"></label>
+            <label for="s1-apercu-r2" class="carousel-dot" aria-label="Image 2"></label>
+            <label for="s1-apercu-r3" class="carousel-dot" aria-label="Image 3"></label>
           </div>
         </div>
       </div>
@@ -107,9 +122,12 @@
           et pris en main l'outil de gestion WAPT, ainsi que configuré les droits d'accès à l'aide de Castel.
         </p>
         <div class="task-carousel">
-          <div class="task-carousel-viewport">
-            <div class="task-track">
-              <article class="task-slide" id="s1-m1-fog">
+          <input type="radio" name="s1-m1-radio" id="s1-m1-r1" class="carousel-radio" checked>
+          <input type="radio" name="s1-m1-radio" id="s1-m1-r2" class="carousel-radio">
+          <input type="radio" name="s1-m1-radio" id="s1-m1-r3" class="carousel-radio">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <article class="carousel-slide" id="s1-m1-fog">
                 <span class="mission-item-title">Masterisation d'image FOG</span>
                 <p>
                   La première tâche qui m'a été confiée consistait à faire de la masterisation d'image FOG sur des PC DELL 16 pro. C'est ordinateur
@@ -119,7 +137,7 @@
                   du personnel de la mairie. 
                 </p><br>
               </article>
-              <article class="task-slide" id="s1-m1-wapt">
+              <article class="carousel-slide" id="s1-m1-wapt">
                 <span class="mission-item-title">Découverte de l'outil de gestion WAPT</span>
                 <p>Durant un après-midi, j'ai découvert l'outil de gestion WAPT, dont l'objectif est d'administrer l'ensemble du parc informatique de la Mairie de Fougères. 
                   Cette découverte m'a permis de comprendre son fonctionnement, ses principales fonctionnalités ainsi que son utilité dans le déploiement 
@@ -128,7 +146,7 @@
 
                 </p><br>
               </article>
-              <article class="task-slide" id="s1-m1-castel">
+              <article class="carousel-slide" id="s1-m1-castel">
                 <span class="mission-item-title">Configuration des droits d'accès Castel</span>
                 <p>J'ai également participé à la configuration des droits d'accès à l'aide de Castel Suite et Planitech. Cette mission consistait à configurer et à installer un poste castel
                   et deux tablettes. Elle m'a permis de découvrir les principes de la gestion des accès, de mieux comprendre l'importance de la sécurité informatique 
@@ -136,11 +154,23 @@
                 </p><br>
               </article>
             </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m1-r3" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m1-r2" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m1-r1" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m1-r3" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m1-r2" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m1-r1" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
           </div>
           <div class="task-dots">
-            <a class="task-dot" href="#s1-m1-fog" aria-label="Masterisation d'image FOG"></a>
-            <a class="task-dot" href="#s1-m1-wapt" aria-label="Découverte de l'outil de gestion WAPT"></a>
-            <a class="task-dot" href="#s1-m1-castel" aria-label="Configuration des droits d'accès Castel"></a>
+            <label for="s1-m1-r1" class="carousel-dot" aria-label="Image 1"></label>
+            <label for="s1-m1-r2" class="carousel-dot" aria-label="Image 2"></label>
+            <label for="s1-m1-r3" class="carousel-dot" aria-label="Image 3"></label>
           </div>
         </div>
         <div class="doc-links">
@@ -165,9 +195,12 @@
           qu'une refonte d'un formulaire destiné aux ressources humaines sous WordPress.
         </p>
         <div class="task-carousel">
-          <div class="task-carousel-viewport">
-            <div class="task-track">
-              <article class="task-slide" id="s1-m2-mdp">
+          <input type="radio" name="s1-m2-radio" id="s1-m2-r1" class="carousel-radio" checked>
+          <input type="radio" name="s1-m2-radio" id="s1-m2-r2" class="carousel-radio">
+          <input type="radio" name="s1-m2-radio" id="s1-m2-r3" class="carousel-radio">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <article class="carousel-slide" id="s1-m2-mdp">
                 <span class="mission-item-title">Changement de mot de passe sur l'application d'entreprise</span>
                 <p>La première tâche qui m'a été confiée, en collaboration avec les développeurs, composés d'un alternant et d'un stagiaire, 
                   consistait à modifier des mots de passe dans différents environnements. Pour ce faire, j'ai dû mettre à jour les fichiers `.env`, 
@@ -176,7 +209,7 @@
 
                 </p><br>
               </article>
-              <article class="task-slide" id="s1-m2-forminator">
+              <article class="carousel-slide" id="s1-m2-forminator">
                 <span class="mission-item-title">Refonte du formulaire de contact (Forminator)</span>
                 <p>Cette tâche avait pour objectif de me faire découvrir une extension WordPress nommée <u>Forminator</u>. La Mairie de Fougères 
                   utilisait auparavant l'extension <u>Contact Form 7</u>, dédiée à la création de formulaires. 
@@ -186,17 +219,29 @@
 
                 </p><br>
               </article>
-              <article class="task-slide" id="s1-m2-hotline">
+              <article class="carousel-slide" id="s1-m2-hotline">
                 <span class="mission-item-title">Hotline</span>
                 <p>Je n'ai pas encore fait cette partie la de mon stage. Cette tâche à pour but de répondre aux différents problèmes des agents.
                 </p><br>
               </article>
             </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m2-r3" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m2-r2" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m2-r1" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m2-r3" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m2-r2" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m2-r1" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
           </div>
           <div class="task-dots">
-            <a class="task-dot" href="#s1-m2-mdp" aria-label="Changement de mot de passe"></a>
-            <a class="task-dot" href="#s1-m2-forminator" aria-label="Refonte du formulaire Forminator"></a>
-            <a class="task-dot" href="#s1-m2-hotline" aria-label="Hotline"></a>
+            <label for="s1-m2-r1" class="carousel-dot" aria-label="Image 1"></label>
+            <label for="s1-m2-r2" class="carousel-dot" aria-label="Image 2"></label>
+            <label for="s1-m2-r3" class="carousel-dot" aria-label="Image 3"></label>
           </div>
         </div>
         <div class="doc-links">
@@ -220,9 +265,11 @@
           leur configuration et leur rôle au sein de l'infrastructure réseau.
         </p>
         <div class="task-carousel">
-          <div class="task-carousel-viewport">
-            <div class="task-track">
-              <article class="task-slide" id="s1-m3-tel">
+          <input type="radio" name="s1-m3-radio" id="s1-m3-r1" class="carousel-radio" checked>
+          <input type="radio" name="s1-m3-radio" id="s1-m3-r2" class="carousel-radio">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <article class="carousel-slide" id="s1-m3-tel">
                 <span class="mission-item-title">Mise en place et configuration d'un téléphone IP</span>
                 <p>
                   Cette mission avait pour objectif de mettre en application une compétence acquise l’année précédente en BUT Réseaux et Télécommunications. 
@@ -232,7 +279,7 @@
                   l’appel soit dirigé vers le service et non vers un utilisateur individuel.
                 </p><br>
               </article>
-              <article class="task-slide" id="s1-m3-switch">
+              <article class="carousel-slide" id="s1-m3-switch">
                 <span class="mission-item-title">Intervention sur switch Netgear et Huawei</span>
                 <p>
                   Cette tâche m’a été confiée en collaboration avec un collègue nommé Vincent. Ensemble, nous nous sommes rendus sur un site qui 
@@ -243,10 +290,18 @@
                 </p>
               </article>
             </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m3-r2" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m3-r2" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
+              <div class="carousel-arrow-pair">
+                <label for="s1-m3-r1" class="carousel-arrow carousel-arrow-prev" aria-label="Image précédente">&#8249;</label>
+                <label for="s1-m3-r1" class="carousel-arrow carousel-arrow-next" aria-label="Image suivante">&#8250;</label>
+              </div>
           </div>
           <div class="task-dots">
-            <a class="task-dot" href="#s1-m3-tel" aria-label="Configuration d'un téléphone IP"></a>
-            <a class="task-dot" href="#s1-m3-switch" aria-label="Intervention sur switch"></a>
+            <label for="s1-m3-r1" class="carousel-dot" aria-label="Image 1"></label>
+            <label for="s1-m3-r2" class="carousel-dot" aria-label="Image 2"></label>
           </div>
         </div>
         <div class="doc-links">
