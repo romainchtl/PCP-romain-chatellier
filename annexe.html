@@ -57,7 +57,7 @@
 
   <div class="rubriques">
 
-    <details class="rubrique" open>
+    <details class="rubrique">
       <summary>CV</summary>
       <div class="rubrique-content">
         <img src="image/CV_Romain_Chatellier.jpg" alt="CV" class="cv-image">
@@ -75,9 +75,19 @@
           <summary>Mission 1 : Déploiement des postes et gestion du contrôle d'accès</summary>
           <ul class="doc-list">
             <li id="stage1-m1-cr"><a href="documents/stage1/compte-rendu-mission1.pdf">Compte rendu de mission 1</a></li>
-            <li id="stage1-m1-fog"><a href="documents/stage1/documentation-fog.pdf">Documentation FOG</a></li>
-            <li id="stage1-m1-wapt-pkg"><a href="documents/stage1/wapt-forcage-profil.png">Paquet WAPT — forçage de sauvegarde du profil</a></li>
-            <li id="stage1-m1-wapt-result"><a href="documents/stage1/resultat-script-forcage-profil.png">Résultat du script de sauvegarde (PowerShell)</a></li>
+            <li id="stage1-m1-fog" class="doc-item">
+              <span class="doc-item-title">Documentation FOG</span>
+              <embed src="documents/stage1/documentation-fog.pdf" type="application/pdf" class="doc-embed-pdf">
+              <a class="doc-open-link" href="documents/stage1/documentation-fog.pdf" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet</a>
+            </li>
+            <li id="stage1-m1-wapt-pkg" class="doc-item">
+              <span class="doc-item-title">Paquet WAPT — forçage de sauvegarde du profil</span>
+              <img src="documents/stage1/wapt-forcage-profil.png" alt="Paquet WAPT — forçage de sauvegarde du profil" class="doc-preview-image">
+            </li>
+            <li id="stage1-m1-wapt-result" class="doc-item">
+              <span class="doc-item-title">Résultat du script de sauvegarde (PowerShell)</span>
+              <img src="documents/stage1/resultat-script-forcage-profil.png" alt="Résultat du script de sauvegarde (PowerShell)" class="doc-preview-image">
+            </li>
           </ul>
         </details>
 
@@ -92,7 +102,10 @@
           <summary>Mission 3 : Administration et exploitation de l'infrastructure réseau</summary>
           <ul class="doc-list">
             <li id="stage1-m3-cr"><a href="documents/stage1/compte-rendu-mission3.pdf">Compte rendu de mission 3</a></li>
-            <li id="stage1-m3-zabbix"><a href="documents/stage1/supervision-zabbix.png">Supervision réseau (Zabbix)</a></li>
+            <li id="stage1-m3-zabbix" class="doc-item">
+              <span class="doc-item-title">Supervision réseau (Zabbix)</span>
+              <img src="documents/stage1/supervision-zabbix.png" alt="Supervision réseau (Zabbix)" class="doc-preview-image">
+            </li>
           </ul>
         </details>
 
@@ -168,6 +181,7 @@
         <ul class="doc-list">
           <li><a href="documents/e5/tableau-synthese-e5.xlsx">Tableau de synthèse des réalisations professionnelles</a></li>
         </ul>
+        <p class="doc-note">Fichier Excel : aperçu direct impossible sans JavaScript, le lien télécharge le fichier.</p>
       </div>
     </details>
 
