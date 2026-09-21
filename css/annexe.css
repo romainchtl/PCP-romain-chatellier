@@ -542,3 +542,53 @@
     @media (max-width: 640px) {
       .rubrique > summary { font-size: 1rem; padding: 1rem 1.1rem; }
     }
+
+    .e5-info {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .e5-info p { margin: 0.2rem 0; }
+
+    .e5-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .e5-table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 860px;
+      font-size: 0.78rem;
+    }
+
+    .e5-table th,
+    .e5-table td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.6rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .e5-table thead th {
+      background: var(--bg);
+      color: var(--accent);
+      font-weight: 600;
+      cursor: help;
+    }
+
+    .e5-table tbody tr:nth-child(odd) { background: var(--surface); }
+
+    .e5-section-row td {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .e5-x {
+      text-align: center;
+      color: var(--accent2);
+      font-weight: 700;
+    }

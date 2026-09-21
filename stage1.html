@@ -18,15 +18,7 @@
 
     <nav class="nav-dock" aria-label="Navigation principale">
 
-      <div class="dropdown" tabindex="0">
-        <div class="dropdown-toggle">
-           <img src="image/stage.png" alt="Stage" style="width: 20px; height: 20px;" >Stage <span class="chevron"></span>
-        </div>
-        <div class="dropdown-menu">
-          <a href="stage1.html">Stage 1</a>
-          <a href="stage2.html">Stage 2</a>
-        </div>
-      </div>
+      <a class="nav-link" href="stage1.html">Stage</a>
 
       <div class="dropdown" tabindex="0">
         <div class="dropdown-toggle">
@@ -53,6 +45,12 @@
   <p class="subtitle-degree">BTS SIO — option SISR</p>
 
   <div class="divider"></div>
+
+  <div class="stage-switch">
+    <span class="stage-switch-label">Autres stages</span>
+    <a href="stage1.html" class="stage-switch-link active" aria-current="page">Stage de 1re année</a>
+    <a href="stage2.html" class="stage-switch-link">Stage de 2e année</a>
+  </div>
 
   <div class="about-box">
     <label>La mairie de fougere<br></label>
@@ -121,6 +119,23 @@
           et à la gestion du contrôle des accès au sein de la Mairie de Fougères. Au cours de cette mission, j'ai réalisé la masterisation des postes, découvert 
           et pris en main l'outil de gestion WAPT, ainsi que configuré les droits d'accès à l'aide de Castel.
         </p>
+        <div class="competencies">
+          <span class="competencies-label">Compétences mobilisées</span>
+          <div class="competency-badges">
+            <span class="competency-badge">B1.1</span>
+            <span class="competency-badge">B1.5</span>
+          </div>
+          <div class="competency-list">
+            <div class="competency-item">
+              <span class="competency-code">B1.1 — Gérer le patrimoine informatique</span>
+              <p class="competency-example">→ Exemple concret : masterisation d'image FOG sur plusieurs postes Dell et configuration des droits d'accès avec Castel Suite et Planitech.</p>
+            </div>
+            <div class="competency-item">
+              <span class="competency-code">B1.5 — Mettre à disposition des utilisateurs un service informatique</span>
+              <p class="competency-example">→ Exemple concret : déploiement des postes masterisés et mise en service de postes et tablettes Castel pour les agents de la mairie.</p>
+            </div>
+          </div>
+        </div>
         <div class="task-carousel">
           <input type="radio" name="s1-m1-radio" id="s1-m1-r1" class="carousel-radio" checked>
           <input type="radio" name="s1-m1-radio" id="s1-m1-r2" class="carousel-radio">
@@ -173,6 +188,19 @@
             <label for="s1-m1-r3" class="carousel-dot" aria-label="Image 3"></label>
           </div>
         </div>
+        <div class="proof-section">
+          <span class="proof-label">Preuves de réalisation</span>
+          <div class="proof-grid">
+            <figure class="proof-item">
+              <img src="documents/stage1/wapt-forcage-profil.png" alt="Paquet WAPT — forçage de sauvegarde du profil" loading="lazy">
+              <figcaption>Paquet WAPT — forçage de sauvegarde du profil</figcaption>
+            </figure>
+            <figure class="proof-item">
+              <img src="documents/stage1/resultat-script-forcage-profil.png" alt="Résultat du script de sauvegarde (PowerShell)" loading="lazy">
+              <figcaption>Résultat du script de sauvegarde (PowerShell)</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="doc-links">
           <span class="doc-links-label">Documents associés :</span>
           <ul>
@@ -196,6 +224,18 @@
           j'ai effectué des changements de mots de passe sur plusieurs applications de l'entreprise ainsi 
           qu'une refonte d'un formulaire destiné aux ressources humaines sous WordPress.
         </p>
+        <div class="competencies">
+          <span class="competencies-label">Compétences mobilisées</span>
+          <div class="competency-badges">
+            <span class="competency-badge">B1.2</span>
+          </div>
+          <div class="competency-list">
+            <div class="competency-item">
+              <span class="competency-code">B1.2 — Répondre aux incidents et aux demandes d'assistance et d'évolution</span>
+              <p class="competency-example">→ Exemple concret : changement de mots de passe suite à une demande des développeurs, refonte du formulaire de contact avec Forminator suite à une demande des ressources humaines, et hotline auprès des agents.</p>
+            </div>
+          </div>
+        </div>
         <div class="task-carousel">
           <input type="radio" name="s1-m2-radio" id="s1-m2-r1" class="carousel-radio" checked>
           <input type="radio" name="s1-m2-radio" id="s1-m2-r2" class="carousel-radio">
@@ -246,6 +286,10 @@
             <label for="s1-m2-r3" class="carousel-dot" aria-label="Image 3"></label>
           </div>
         </div>
+        <div class="proof-section">
+          <span class="proof-label">Preuves de réalisation</span>
+          <p class="proof-empty">Aucune capture disponible pour le moment.</p>
+        </div>
         <div class="doc-links">
           <span class="doc-links-label">Documents associés :</span>
           <ul>
@@ -266,6 +310,28 @@
           J'ai également participé à une intervention sur des commutateurs réseau (switches) de marques NETGEAR et Huawei, ce qui m'a permis de découvrir 
           leur configuration et leur rôle au sein de l'infrastructure réseau.
         </p>
+        <div class="competencies">
+          <span class="competencies-label">Compétences mobilisées</span>
+          <div class="competency-badges">
+            <span class="competency-badge">B1.1</span>
+            <span class="competency-badge">B1.2</span>
+            <span class="competency-badge">B1.5</span>
+          </div>
+          <div class="competency-list">
+            <div class="competency-item">
+              <span class="competency-code">B1.1 — Gérer le patrimoine informatique</span>
+              <p class="competency-example">→ Exemple concret : vérification de la configuration des switches NETGEAR et Huawei et remplacement de certains ports pour rétablir la continuité du service réseau.</p>
+            </div>
+            <div class="competency-item">
+              <span class="competency-code">B1.2 — Répondre aux incidents et aux demandes d'assistance et d'évolution</span>
+              <p class="competency-example">→ Exemple concret : intervention avec un collègue sur un site n'ayant plus accès à Internet, diagnostic puis remplacement de ports défectueux.</p>
+            </div>
+            <div class="competency-item">
+              <span class="competency-code">B1.5 — Mettre à disposition des utilisateurs un service informatique</span>
+              <p class="competency-example">→ Exemple concret : prise en charge, configuration et mise en service d'un nouveau téléphone IP (numéro court, touches, renvoi d'appel).</p>
+            </div>
+          </div>
+        </div>
         <div class="task-carousel">
           <input type="radio" name="s1-m3-radio" id="s1-m3-r1" class="carousel-radio" checked>
           <input type="radio" name="s1-m3-radio" id="s1-m3-r2" class="carousel-radio">
@@ -304,6 +370,15 @@
           <div class="task-dots">
             <label for="s1-m3-r1" class="carousel-dot" aria-label="Image 1"></label>
             <label for="s1-m3-r2" class="carousel-dot" aria-label="Image 2"></label>
+          </div>
+        </div>
+        <div class="proof-section">
+          <span class="proof-label">Preuves de réalisation</span>
+          <div class="proof-grid">
+            <figure class="proof-item">
+              <img src="documents/stage1/supervision-zabbix.png" alt="Supervision réseau (Zabbix)" loading="lazy">
+              <figcaption>Supervision réseau (Zabbix)</figcaption>
+            </figure>
           </div>
         </div>
         <div class="doc-links">
